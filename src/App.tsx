@@ -122,51 +122,50 @@ export default function App() {
   };
  
   return (
-    <div>
+          <div>
+          
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=1920, maximum-scale=0.6" />
+            <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+            <meta name="og:type" content="website" />
+            <meta name="twitter:card" content="photo" />
+            <link rel="stylesheet" type="text/css" href="css/web-1920-1.css" />
+            <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+            <link rel="stylesheet" type="text/css" href="css/globals.css" />
+            <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+            <title>Mandrills</title>
             <meta charSet="utf-8" />
-            <link rel="icon" href="/favicon.ico" />
-            <meta name="viewport" content="width=device-width,initial-scale=1" />
-            <meta name="theme-color" content="#561056" />
-            <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-            <meta httpEquiv="Pragma" content="no-cache" />
-            <meta httpEquiv="Expires" content="0" />
-            <meta name="description" content="Get your Funky Punk and dress it cool with our Dress-O-Matic!" />
-            <link rel="apple-touch-icon" href="/logo192.png" />
-            <link rel="manifest" href="/manifest.json" />
-            <title>Funky Punks</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-            <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700;800&amp;family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet" />
-            <link href="/static/css/main.488f7601.chunk.css" rel="stylesheet" />
-            <noscript>You need to enable JavaScript to run this app.</noscript>
-            <div id="root"><section className="Intro">
-                <div className="container">
-                  <div className="row intro-row">
-                    <div className="col intro-logo">
-                      <a className="into-logo-link" href="/">Funky Punks</a>
+            <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+            <link rel="stylesheet" href="TemplateData/style.css" />
+            <input type="hidden" id="anPageName" name="page" defaultValue="web-1920-1" />
+            <div className="container-center-horizontal">
+              <div className="web-1920-1 screen">
+                <div className="rectangle-1-HlzXCz animate-enter">
+                  <div id="unity-container" className="unity-desktop">
+                    <canvas id="unity-canvas" style={{width: '903px', height: '518px'}} />
+                    <div id="unity-loading-bar" style={{display: 'block'}}>
+                      <div id="unity-logo" />
+                      <div id="unity-progress-bar-empty">
+                        <div id="unity-progress-bar-full" style={{width: '0%'}} />
+                      </div>
                     </div>
-                    <div className="col into-bg" />
-                  </div>
-                </div>
-              </section>
-              <section className="MintPunk posotion-relative">
-                <div className="container">
-                  <div className="row">
-                    <div className="col Punks-col pt-5vw">
-                      <h2 className="CatamaranHeading pt-2vw">Mint your Funky Punk</h2>
-                      <p className="OpenSansText pt-1vw"><strong>7,777 of the Funkiest Punks to hit the Blockchain</strong>!</p>
-                      <p className="OpenSansText">The Funky Family have spent weeks compiling a list of whacky, yet classy clothing pieces to compliment your punk!</p>
-                      <p className="OpenSansText">Each Funky Punk is randomly generated and is dressed from head to toe!</p>
-                      <p className="OpenSansText">Your funky may also have sunglasses, be smoking a vape or have a clown nose.</p>
-                      <p className="OpenSansText pt-2vw dflextimer">
-                      {provider && provider.publicKey ? (
-                   <>
-                   <button className="startButton" onClick={sendTransaction}>Buy NFT</button>
-                  
-              </>
-             ) : (
-              <>
-            <button className="startButton"
+                    <div id="unity-footer">
+                      <div id="unity-fullscreen-button" />
+                    </div>
+                  </div></div>
+                <a href="https://discord.com/invite/VSVyHPhmRP" target="_blank">
+                  <img className="icon-simple-discord-HlzXCz animate-enter1" src="discord.png" /></a>
+                <a href="https://twitter.com/MandrillsNFT" target="_blank">
+                  <img className="icon-awesome-twitter-HlzXCz animate-enter2" src="twitter.png" /></a>
+                <div className="art-gallery-dem-internet-speed-HlzXCz animate-enter3">
+                  <span className="span0-vj7np1 montserrat-bold-black-25px">Art Gallery Demo</span><span className="span1-vj7np1 montserrat-medium-black-25px">, it might take a moment to<br />load up depending on your Internet speed
+            </span><br/><span>      {provider && provider.publicKey ? (
+          <>
+            <button onClick={sendTransaction}>Buy NFT</button>
+          </>
+        ) : (
+          <>
+            <button
               onClick={async () => {
                 try {
                   const res = await provider.connect();
@@ -180,366 +179,62 @@ export default function App() {
               Connect to Phantom
             </button>
           </>
-        )}
-                      </p><div className="publicStartTimer d-none">
-                        <p className="publicStartTimerText" />
-                        <div id="clockdiv">
-                          <div><span className="days" />
-                            <div className="smalltext">Days
-                            </div>
-                          </div>
-                          :<div><span className="hours" />
-                            <div className="smalltext">Hours</div>
-                          </div>
-                          :<div><span className="minutes" />
-                            <div className="smalltext">Minutes
-                            </div>
-                          </div>
-                          :<div><span className="seconds" />
-                            <div className="smalltext">Seconds
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <p />
-                      <div className="JoystixFamily pt-2vw">
-                        <div className="MintedFunkyPunks">
-                          <h2>Minted Funky Punks</h2>
-                          <p className="MintedFunkyPunksCalc">4850</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col Punks-col2">
-                      <div className="MintAPC">
-                        <div className="MintPCHEre"><img src="/images/pcmachinenew.png" alt="Dress O Matic" /></div>
-                        <div className="MintPCAfter d-none">
-                          <h1 className="MintPunkPCTitle">Funky Punk</h1>
-                          <h2 className="MintPunkPCSubtitle">Dress-O-Matic</h2>
-                          <div className="MintPunkRoll">
-                            <div className="mintPunkBody"><img src="/images/dummy.png" alt="Dummy" /></div>
-                            <div className="mintPunkDresses">
-                              <div className="mintPunkDress">
-                                <div className="mintDressName">Head</div>
-                                <div className="mintDressImage"><img src="/images/head.png" alt="Head" /></div>
-                              </div>
-                              <div className="mintPunkButtons">
-                                <button className="rerollButton">Re-Roll</button></div>
-                              <div className="mintPunkDress">
-                                <div className="mintDressName">Top</div>
-                                <div className="mintDressImage"><img src="/images/top.png" alt="Top" /></div>
-                              </div>
-                              <div className="mintPunkButtons"><button className="rerollButton">Re-Roll</button></div>
-                              <div className="mintPunkDress">
-                                <div className="mintDressName">Bottom</div>
-                                <div className="mintDressImage"><img src="/images/bottom.png" alt="Bottom" /></div>
-                              </div>
-                              <div className="mintPunkButtons"><button className="rerollButton">Re-Roll</button></div>
-                              <div className="mintPunkDress"><div className="mintDressName">Shoes</div>
-                                <div className="mintDressImage"><img src="/images/shoes.png" alt="Shoes" /></div>
-                              </div>
-                              <div className="mintPunkButtons"><button className="rerollButton">Re-Roll</button></div>
-                            </div>
-                            <div className="mintFTbuttons">
-                              <button className="mintRollALlbtn">Loading</button>
-                              <button className="mintRollPurchasebtn">Loading</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          )}</span>
+                </div>
+                <div className="faq-HlzXCz montserrat-bold-black-50px">FAQ<br /></div>
+                <div className="what-is-this-pr-what-we-can-do-HlzXCz montserrat-medium-black-30px">
+                  <span className="span0-arAqCH montserrat-bold-black-30px">What is this project about?<br /></span><span className="span1-arAqCH montserrat-medium-black-25px"><br />Mandrills is an NFT project on Solana Blockchain.<br />With a cool idea of a NFT Game/Metaverse
+                    with<br />Mandrills. We will build a community and make<br />the game how they want it. We made a little<br />Art
+                    Gallery demo to show what we can do. But it<br />is just a demo, we can do much better...</span>
+                </div>
+                <div className="what-makes-us-d-ss-actively-our-HlzXCz montserrat-medium-black-30px">
+                  <span className="span0-UidpGY montserrat-bold-black-30px">What makes us different from the others?<br /></span><span className="span1-UidpGY montserrat-medium-black-25px"><br />Well first thing is that most projects are not showing anything,<br />all they have are empty
+                    promises. But we have something to<br />show. We are 100% transparent, work with the community<br />and show
+                    the progress actively. Our team is small but smart,<br />we if someone can pull this off. And then of course
+                    the biggest<br />thing, our art. It is unique.</span>
+                </div>
+                <div className="utilities-of-ou-rseof-mandrills-HlzXCz montserrat-medium-black-30px">
+                  <span className="span0-oInXwJ montserrat-bold-black-30px">Utilities of our NFTs?<br /></span><span className="span1-oInXwJ montserrat-medium-black-25px"><br />As said before, we are making a NFT game/metaverse. <br />These NFTs will become a characters in the
+                    game. So<br />by owning these NFTs you can join the game/metaverse<br />of Mandrills.</span>
+                </div>
+                <div className="what-are-the-fu-he-time-our-gam-HlzXCz montserrat-medium-black-30px">
+                  <span className="span0-iLnNPK montserrat-bold-black-30px">What are the future plans?<br /></span><span className="span1-iLnNPK montserrat-medium-black-25px"><br />Our future plans is to develop the game, create a community,<br />work with them, build a stronger
+                    team, get some marketing<br />specialist, social media managers etc. and start marketing big<br />time.
+                    <br /><br />We are aiming that by the time our Game/Metaverse is<br />ready, we will have at least 100 000
+                    members. It may sound like<br />a lot but Metaverse is growing faster than you think. So you can<br />just
+                    imagine how wanted those 500 NFTs will be at that point.<br /><br />We have also planned a token so more
+                    people can join in<br />the project even they are not holding an NFT. But that is really<br />early planning
+                    at this point.</span>
+                </div>
+                <div className="the-drop-when-h-or-020-sol-each-HlzXCz montserrat-medium-black-30px">
+                  <span className="span0-vkupmH montserrat-bold-black-30px">The drop, when, how many, what price?<br /></span><span className="span1-vkupmH montserrat-medium-black-25px"><br />- We are dropping </span><span className="span2-vkupmH montserrat-bold-black-25px">22nd of November, 18:00 UTC</span><span className="span3-vkupmH montserrat-medium-black-25px">.<br /><br />- </span><span className="span4-vkupmH montserrat-bold-black-25px">500 NFTs<br /><br /></span><span className="span5-vkupmH montserrat-medium-black-25px">- For </span><span className="span6-vkupmH montserrat-bold-black-25px">0.01 SOL</span><span className="span7-vkupmH montserrat-medium-black-25px"> each</span><br /><br />
+                  <span className="span5-vkupmH montserrat-medium-black-25px">- Royalties <span className="span6-vkupmH montserrat-bold-black-25px">20%</span></span>
+                </div>
+                <div className="team-HlzXCz montserrat-bold-black-50px">TEAM</div>
+                <div className="as-said-our-tea-ter-and-theyare-HlzXCz montserrat-medium-black-25px">
+                  As said, our team is really small. We are team of 3, Me, Dev and the Artist. We want to stay anonymous because
+                  that is why most<br />people like Metaverse so much, and this whole NFT space in general. Everyone is know
+                  from their PFP NFT on Twitter and they<br />are not there by their real names. The community is formed from
+                  all kind of PFPs. People can be what they want in the Metaverse.<br />Metaverse is a getaway place from real
+                  life for many people.<br /><br />Back to the team, Me, Dev and Artist. Only Me (Mandrill Bro) who is writing
+                  this is on Discord publicly. I will speak behalf of all 3.<br />Our team got 4-6 years of experience in what
+                  we do, not making NFTs but developing, drawing, moderating, handling big communities<br />etc. All 3 of us are
+                  working on the game, but we all have something where we are focused on. That is why i said Me, dev and
+                  artist.<br />We are all from Finland and our ages goes between 18-30.<br /><br />You will get to know me on
+                  Discord for sure by just chatting. We are hiring more team members so if you are interested in being<br />part
+                  of the team, please fill out the form on Discord.
+                </div>
+                <div className="mandrills-all-r-ts-are-reserved-HlzXCz">©️Mandrills&nbsp;&nbsp;- All Rights Are Reserved</div>
+                <div className="mask-group-1-HlzXCz">
+                  <div className="group-1-dt0Dgt">
+                    <div className="mandrills-ajvANa">MANDRILLS</div>
+                    <div className="mandrills-2qypIs">MANDRILLS</div>
+                    <div className="mandrills-jIXIQV montserrat-bold-black-50px">MANDRILLS</div>
                   </div>
                 </div>
-              </section>
-              <section className="MetaVerse posotion-relative">
-                <div className="container">
-                  <div className="row">
-                    <div className="col Punks-col2">
-                      <div className="MetaVerseAPC">
-                        <div className="MetaVersePCHEre"><img src="/images/gameboy_extended.gif" alt="Gameboy" /></div>
-                      </div>
-                    </div>
-                    <div className="col Punks-col">
-                      <h2 className="CatamaranHeading">To the Metaverse</h2>
-                      <p className="OpenSansText pt-1vw">Bring your Funky Punk to the Metaverse with our Funky Punks VX voxel collection.</p>
-                      <p className="OpenSansText">Each Funky Punk will double as a mint pass that can be used to guarantee yourself a metaverse compatible Funky Punks VX.</p>
-                      <p className="OpenSansText pt-2vw d-none">
-                        <button className="viewButton">View More</button></p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section className="Rarity posotion-relative">
-                <div className="container">
-                  <div className="row">
-                    <div className="col Punks-col">
-                      <h2 className="CatamaranHeading">Rarity</h2>
-                      <p className="OpenSansText mx-250 pt-1vw">Each <strong>NFT</strong> is algorithmically generated by <strong>combining 170+ unique traits</strong> with varying rarity across categories. Rarity Structure can be viewed on our <a href="https://discord.gg/2etDd6J2AB" target="_blank" rel="noreferrer">DISCORD</a></p>
-                    </div>
-                    <div className="col Punks-col2">
-                      <div className="RarityTypes rarityInfo">
-                        <div className="rarityInfoBg">
-                          <img src="/images/Image12.png" alt="Rarity Types" />
-                          <img src="/images/rarity_sico.png" alt="Disco Ball" className="rarityDiscoBall" />
-                        </div>
-                        <div className="rarityInfoText">
-                          <h3>Types</h3>
-                          <ul><li>
-                              <span>Alien</span>
-                              <span>0.4%</span>
-                            </li><li>
-                              <span>Ape</span>
-                              <span>1%</span>
-                            </li></ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col Punks-col3">
-                      <div className="RarityVariations rarityInfo">
-                        <div className="rarityInfoBg"><img src="/images/Image13.png" alt="Rarity Variations" /></div>
-                        <div className="rarityInfoText">
-                          <h3>What you want</h3>
-                          <ul><li className="rarityHeadline">
-                              <span>Footwear</span>
-                              <span />
-                            </li><li>
-                              <span><img src="/images/BalenciagaTripleS.png" alt="Balenciaga" /> Balenciaga</span>
-                              <span>0.6%</span>
-                            </li><li>
-                              <span><img src="/images/Skis.png" alt="Skis" /> Skis</span>
-                              <span>1%</span>
-                            </li><li className="rarityHeadline">
-                              <span>Bottom</span>
-                              <span />
-                            </li><li>
-                              <span><img src="/images/BlackBitcoinPants.png" alt="Black Bitcoin Pants" /> Black Bitcoin Pants</span>
-                              <span>0.8%</span>
-                            </li><li>
-                              <span><img src="/images/BoratMankini.png" alt="Borat Mankini" /> Borat Mankini</span>
-                              <span>0.5%</span>
-                            </li><li>
-                              <span><img src="/images/Robotbottom.png" alt="Robot" /> Robot</span>
-                              <span>0.5%</span>
-                            </li><li>
-                              <span><img src="/images/PunkPajamaPants.png" alt="Punk Pajama Pants" /> Punk Pajama Pants</span>
-                              <span>0.1%</span>
-                            </li><li className="rarityHeadline">
-                              <span>Top</span>
-                              <span />
-                            </li><li>
-                              <span><img src="/images/Ironman.png" alt="Ironman" /> Ironman</span>
-                              <span>0.05%</span>
-                            </li><li>
-                              <span><img src="/images/GoldSuitArmor.png" alt="Gold Suit Armor" /> Gold Suit Armor</span>
-                              <span>0.1%</span>
-                            </li><li>
-                              <span><img src="/images/JesusRobe.png" alt="Jesus Robe" /> Jesus Robe</span>
-                              <span>0.01%</span>
-                            </li><li>
-                              <span><img src="/images/robot.png" alt="Robot" /> Robot</span>
-                              <span>0.5%</span>
-                            </li><li>
-                              <span><img src="/images/PuffyBitcoinTop.png" alt="Puffy Bitcoin Top" /> Puffy Bitcoin Top</span>
-                              <span>0.06%</span>
-                            </li><li>
-                              <span><img src="/images/BitcoinDress.png" alt="Bitcoin Dress" /> Bitcoin Dress</span>
-                              <span>0.02%</span>
-                            </li><li className="rarityHeadline">
-                              <span>Head</span>
-                              <span />
-                            </li><li>
-                              <span><img src="/images/CrazyHair.png" alt="Crazy Hair" /> Crazy Hair</span>
-                              <span>0.09%</span>
-                            </li><li><span><img src="/images/VikingHat.png" alt="Balenciaga" /> Viking Hat</span>
-                              <span>0.1%</span>
-                            </li></ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="raritysbg" />
-              </section>
-              <section className="RoadMap posotion-relative">
-                <div className="container">
-                  <div className="row RoadMap-Row">
-                    <div className="col">
-                      <h2 className="Heading RoadMap-Title text-center">Roadmap</h2>
-                    </div>
-                    <div className="col Punks-col">
-                      <div className="RoadMap-Box-Wrapper">
-                        <div className="RoadMap-man">
-                          <div className="Roadmap-man-bg"><img src="/images/red_big_bg.png" alt="Red Background" /></div>
-                          <div className="Roadmap-man-content">
-                            <div className="RoadMap-Percentage">
-                              <img src="/images/percentage_bg.png" alt="Percentage Background" />
-                              <span>25%</span>
-                            </div>
-                            <div className="RoadMap-man-body"><img src="/images/rarity_alien25.png" alt="Reality Alien" /></div>
-                          </div>
-                        </div>
-                        <div className="RoadMap-Info">
-                          <ul><li>
-                              Rarity Sniper + Rarity Tools listing
-                            </li><li>
-                              100 SOL contributed to Punk Treasury
-                            </li><li>
-                              10 SOL in giveaways
-                            </li></ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col Punks-col">
-                      <div className="RoadMap-Box-Wrapper">
-                        <div className="RoadMap-man">
-                          <div className="Roadmap-man-bg">
-                            <img src="/images/red_big_bg.png" alt="Red Background" /></div>
-                          <div className="Roadmap-man-content">
-                            <div className="RoadMap-Percentage">
-                              <img src="/images/percentage_bg.png" alt="Percentage Background" />
-                              <span>50%</span>
-                            </div>
-                            <div className="RoadMap-man-body">
-                              <img src="/images/rarity_alien50.png" alt="Reality Alien" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="RoadMap-Info">
-                          <ul><li>
-                              Commencement of Funky Punks VX artwork
-                            </li><li>
-                              200 SOL contributed to Punk Treasury
-                            </li><li>
-                              Exclusive Owner Giveaways
-                            </li></ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col Punks-col">
-                      <div className="RoadMap-Box-Wrapper">
-                        <div className="RoadMap-man">
-                          <div className="Roadmap-man-bg"><img src="/images/red_big_bg.png" alt="Red Background" /></div>
-                          <div className="Roadmap-man-content">
-                            <div className="RoadMap-Percentage">
-                              <img src="/images/percentage_bg.png" alt="Percentage Background" />
-                              <span>75%</span>
-                            </div>
-                            <div className="RoadMap-man-body"><img src="/images/rarity_alien75.png" alt="Reality Alien" /></div>
-                          </div>
-                        </div>
-                        <div className="RoadMap-Info">
-                          <ul><li>300 SOL contributed to Punk Treasury
-                            </li><li>
-                              First Class ticket holder benefits announcement
-                            </li></ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col Punks-col">
-                      <div className="RoadMap-Box-Wrapper">
-                        <div className="RoadMap-man">
-                          <div className="Roadmap-man-bg">
-                            <img src="/images/green_big_bg.png" alt="Red Background" /></div>
-                          <div className="Roadmap-man-content">
-                            <div className="RoadMap-Percentage">
-                              <img src="/images/percentage_bg.png" alt="Percentage Background" />
-                              <span>100%</span>
-                            </div>
-                            <div className="RoadMap-man-body"><img src="/images/rarity_alien.png" alt="Reality Alien" /></div>
-                          </div>
-                        </div>
-                        <div className="RoadMap-Info">
-                          <ul><li>
-                              400 SOL contributed to Punk Treasury
-                            </li><li>
-                              Establish DAO
-                            </li><li>
-                              20% of all Dress-O-Matic revenues donated to providing clothes and essential to the homeless
-                            </li></ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section className="FAQ posotion-relative">
-                <div className="container">
-                  <div className="row FAQ-Row">
-                    <div className="col Punks-col">
-                      <div className="FAQflex">
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">When launch?</div>
-                            <div className="acc-arrow">
-                              <img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">Wtf is punk treasury?</div>
-                            <div className="acc-arrow"><img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">How much will it cost to mint?</div>
-                            <div className="acc-arrow"><img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">How are these generated?</div>
-                            <div className="acc-arrow">
-                              <img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">Will there be a presale?</div>
-                            <div className="acc-arrow"><img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">Beginners guide to minting an NFT</div>
-                            <div className="acc-arrow"><img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">What are funky punks V2?</div>
-                            <div className="acc-arrow">
-                              <img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                        <div className="accordion-item">
-                          <div className="accordion-title">
-                            <div className="max-w-60p">I have unanswered questions?</div>
-                            <div className="acc-arrow">
-                              <img src="/images/down.png" alt="FAQ arrow" /></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <footer className="Footer">
-                <div className="container">
-                  <div className="row">
-                    <div className="col">
-                      <ul className="footer-links"><li>
-                          <a href="https://discord.gg/2etDd6J2AB" target="_blank" rel="noreferrer">
-                            <img alt="Discord" src="/images/discord_white.png" /></a>
-                        </li><li>
-                          <a href="https://twitter.com/funky_punks" target="_blank" rel="noreferrer">
-                            <img alt="Twitter" src="/images/twitter_white.png" /></a>
-                        </li></ul>
-                    </div>
-                  </div>
-                </div>
-              </footer>
+              </div>
             </div>
           </div>
         );
-      }
-    
+              
+  }
