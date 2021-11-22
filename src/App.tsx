@@ -159,13 +159,17 @@ export default function App() {
                   <img className="icon-awesome-twitter-HlzXCz animate-enter2" src="twitter.png" /></a>
                 <div className="art-gallery-dem-internet-speed-HlzXCz animate-enter3">
                   <span className="span0-vj7np1 montserrat-bold-black-25px">Art Gallery Demo</span><span className="span1-vj7np1 montserrat-medium-black-25px">, it might take a moment to<br />load up depending on your Internet speed
-            </span><br/><span>      {provider && provider.publicKey ? (
+            </span><br/><br/><span>      {provider && provider.publicKey ? (
           <>
-            <button onClick={sendTransaction}>Buy NFT</button>
+          <button  onClick={sendTransaction} className="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCzh dStniN MuiButton-containedPrimary" type="button">
+            <span className="MuiButton-label">
+           Mint NFT
+            </span>
+            </button>
           </>
         ) : (
           <>
-            <button
+            <button  className="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCzh dStniN MuiButton-containedPrimary"
               onClick={async () => {
                 try {
                   const res = await provider.connect();
